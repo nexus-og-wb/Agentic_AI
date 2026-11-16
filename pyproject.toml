@@ -1,0 +1,24 @@
+[project]
+name = "ai-eng-week-4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Prashant Singh", email = "prasahntsingh4007@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.10",
+    "langchain-openai>=1.7.4",
+    "psycopg[binary,binary-poll]>=3.3.8",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+ai-eng-week-4 = "ai_eng_week_4:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
